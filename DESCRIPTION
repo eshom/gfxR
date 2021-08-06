@@ -8,11 +8,9 @@ Authors@R:
            role = c("aut", "cre"),
            email = "erezshomron@mykolab.com")
 Maintainer: Erez Shomron <erezshomron@mykolab.com>
-Description: 'gfxR' is a wrapper for the gfx library. The 'gfx' library
-        is a simple graphics library that was made for educational
-        purposes. You can find more information about it in their webpage: 
-        '<https://www3.nd.edu/~dthain/courses/cse20211/fall2013/gfx/>'
+Description: Wrapper for the 'gfx' library. A simple graphics library that was made for educational purposes. More Information about the library can be found their webpage. '<https://www3.nd.edu/~dthain/courses/cse20211/fall2013/gfx/>'.
 NeedsCompilation: yes
+SystemRequirements: X11, glibc
 OS_type: unix
 Depends: R (>= 4.0)
 License: LGPL (>= 3)

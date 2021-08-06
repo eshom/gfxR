@@ -84,7 +84,7 @@ SEXP R_gfx_ypos(void)
 // which returns true if an event (key or button press) has occurred, otherwise
 // returns false immediately. If it returns true, then you can call gfx_wait to
 // retrieve the event without waiting.
-SEXP R_gfx_event_waiting()
+SEXP R_gfx_event_waiting(void)
 {
         return ScalarInteger(gfx_event_waiting());
 }
