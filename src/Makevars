@@ -1,0 +1,2 @@
+# Using X11 and math libraries
+PKG_LIBS = -lX11 -lm

@@ -1,0 +1,22 @@
+Package: gfxR
+Title: Wrapper for the Gfx Library
+Version: 0.0.0.9000
+Date: 2021-08-05
+Authors@R: 
+    person(given = "Erez",
+           family = "Shomron",
+           role = c("aut", "cre"),
+           email = "erezshomron@mykolab.com")
+Maintainer: Erez Shomron <erezshomron@mykolab.com>
+Description: 'gfxR' is a wrapper for the gfx library. The 'gfx' library
+        is a simple graphics library that was made for educational
+        purposes. You can find more information about it in their webpage: 
+        '<https://www3.nd.edu/~dthain/courses/cse20211/fall2013/gfx/>'
+NeedsCompilation: yes
+OS_type: unix
+Depends: R (>= 4.0)
+License: LGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
