@@ -63,6 +63,9 @@ SEXP R_gfx_clear_color(SEXP red, SEXP green, SEXP blue)
 SEXP R_gfx_wait(void)
 {
         char out_char = gfx_wait();
+        if (out_char == 1L || out_char == 2L || out_char == 3L)
+                return ScalarInteger(out_char);
+
         const char out[2] = {out_char, '\0'};
         return mkString(out);
 }
@@ -86,7 +89,7 @@ SEXP R_gfx_ypos(void)
 // retrieve the event without waiting.
 SEXP R_gfx_event_waiting(void)
 {
-        return ScalarInteger(gfx_event_waiting());
+        return ScalarLogical(gfx_event_waiting());
 }
 
 // gfx_flush flushes all output to the graphics window. This forces all
