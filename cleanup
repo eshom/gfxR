@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
-rm src *.o gfxR.so
+rm src/*.o src/gfxR.so

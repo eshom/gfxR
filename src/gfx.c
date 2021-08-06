@@ -38,7 +38,7 @@ void gfx_open( int width, int height, const char *title )
 {
 	gfx_display = XOpenDisplay(0);
 	if(!gfx_display) {
-		fprintf(stderr,"gfx_open: unable to open the graphics window.\n");
+      /* fprintf(stderr,"gfx_open: unable to open the graphics window.\n"); */
 		exit(1);
 	}
 

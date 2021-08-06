@@ -12,6 +12,13 @@ SEXP R_gfx_open(SEXP width, SEXP height, SEXP title)
         return R_NilValue;
 }
 
+// Draw a single point at (x, y)
+SEXP R_gfx_point(SEXP x, SEXP y)
+{
+        gfx_point(asInteger(x), asInteger(y));
+        return R_NilValue;
+}
+
 // gfx_line draws a line in the graphics window,
 // using the current color, from location x1,y1 to x2,y2
 SEXP R_gfx_line(SEXP x1, SEXP y1, SEXP x2, SEXP y2)
